@@ -1,11 +1,11 @@
 My Portfolio
 
-https://glenhood.github.io/Horiseon-Social-Solution-Services-Refactor/
+https://glenhood.github.io/Glen-Hood-Portfolio/
 
-Per client request, this site was refactored to meet accessibility standards to optimize for search engines. Also, during the refactor, semantic HTML structure was added and elements were restructured logically, independent of style and position. 
-Heading attributes were changed to follow sequential order and the page was provided with a consise, descriptive title. Finally, CSS selectors and properties were consolidated and organized to follow semantic structure, as well as the CSS file being properly commented.
+I created a portfolio to provide work samples for potential employers. This site has the ability to navigate to my previous work once the portfoilio is loaded. The site also includes my name and a recent photo. Also, the site has provided links that guide the user to an "About Me", "Work", and linkable contact buttons. When this page is resized, it is resposive and adapts to the users viewpoint.
     
-![alt text](assets/images/Screenshot.jpeg)
+![alt text](assets/images/E1230C1B-34DA-46E1-9AEF-2B58C4C7E0E8_1_105_c.jpeg)
 
 Credits-
 www.w3schools.com was used as refrence
+Robert Kurle (tutor) assisted with some design questions
