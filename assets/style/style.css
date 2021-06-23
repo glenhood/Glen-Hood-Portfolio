@@ -9,8 +9,8 @@ header {
 header h1 {
     color: white;
     background: black;
-    font-family: fantasy;
-    font-size: 2.5rem;
+    font-family: cursive;
+    font-size: 1.56rem;
     height: 2rem;
     padding-top: 15px;
 }
@@ -36,7 +36,7 @@ header ul li a {
     height: 400px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("/Users/glenhood/Desktop/My-Portfolio/assets/images/mountains.png");
+    background-image: url("https://www.lightstalking.com/wp-content/uploads/matterhorn-2921923_1280.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -58,12 +58,17 @@ header ul li a {
 }
 /* Welcome to site */
 h3   {
+    max-width: 100%; 
+    max-height: 4vh;
+    opacity: .8;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
     background-color: black;
-    opacity: .6;
     color: white;
-    float: right;
-    display: inline;
-    flex-flow: wrap;
+    font-family: cursive;
 }
 
 /* body styling */
@@ -176,15 +181,17 @@ footer {
 /* Media screen 1068px */
 @media screen and (max-width:1068px) {
     h3   {
-        max-width: 50%;
-        max-height: 10vh;
-        background-color: black;
+        max-width: 100%; 
+        max-height: 4vh;
         opacity: .8;
-        color: white;
-        float: right;
-        display: inline;
-        line-height: 2;
         padding: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-family: cursive;
     }
     
     body header h1 span {
@@ -219,7 +226,7 @@ footer {
     body section ul li > * {
         border: none;
         width: 60%;
-        color: white;
+        color: black;
         background: white;
     }
 
@@ -242,15 +249,17 @@ footer {
     }
 
     h3   {
-        max-width: 50%;
-        max-height: 10vh;
-        background-color: black;
+        max-width: 100%; 
+        max-height: 4vh;
         opacity: .8;
-        color: white;
-        float: right;
-        display: inline;
-        line-height: 2;
         padding: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-family: cursive;
     }
 
     body header h1 span {
