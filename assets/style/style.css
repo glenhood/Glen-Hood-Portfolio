@@ -1,14 +1,14 @@
+/* Color */
 :root {
     --dark: #383838;
     --white: white;
     --gary: gray;
-    --h1tag-size: 2.5rem; 
-    --right-margin: 5vw; 
-    --left-margin: 7vw; 
-    --border-line-width: 0.2rem; 
   }
-
-
+/* Background color */
+body {
+    background-color: black;
+}
+/* Header styling */
 header {
     background: black;
     display: flex;
@@ -19,13 +19,14 @@ header {
 header h1 {
     color: var(--white);
     background: var(--dark);
-    font-size: var(--h1tag-size);
-    height: 1rem;
-    padding: -1vh -1vw -1vh var(--right-margin);
+    font-family: fantasy;
+    font-size: 2.5rem;
+    height: 2rem;
+    padding-top: 15px;
 }
 
 header ul {
-    margin-right: var(--right-margin);
+    margin-right: 5vw;
     display: flex;
     align-items: center;
 }
@@ -35,12 +36,12 @@ header ul li a {
     color: var(--white);
     text-decoration: none;
     font-size: 1rem;
-    border-bottom: var(--border-line-width) solid var(--white);
+    border-bottom: .2rem solid var(--white);
     padding: 0.4rem;
     margin: .5rem;
 }
 
-
+/* Main mountain photos */
 .mountains {
     height: 400px;
     width: 100%;
@@ -49,34 +50,59 @@ header ul li a {
     background-size: cover;
     background-position: center;
 }
-
+/* Picture of me */
+.mountains img  {
+    width: 20%;
+    border-radius: 50%;
+    padding-top: 52px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(100%);
+    transition: all 0.25s ease;
+}
+/* Grayscale change as hover */
+.mountains img:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+/* Welcome to site */
+h3   {
+    background-color: black;
+    opacity: .6;
+    color: white;
+    float: right;
+    display: inline;
+    flex-flow: wrap;
+/* h2 design */
+}
 main > div > h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding: .25rem;
-    color: var(--dark);
-    background: var(--dark);
+    color: var(--white);
+    background: var(--white);
     display: flex;
     justify-content: right;
-    margin: 0px var(--right-margin) 0vh 0vw;
+    margin: 0px 5vw 0vh 0vw;
     padding: .5rem;
     position: absolute;
     bottom: 2vh;
     right: 0;
-    background: var(--dark);
+    background: var(--white);
 }
-
+/* Main design */
 main section {
-    margin: 2vh var(--right-margin) 1vh var(--left-margin);
+    margin: 2vh 5vw 1vh 7vw;
     display: flex;
 }
 
 main section h1 {
     width: 30%;
-    font-size: var(--h1tag-size);
+    font-size: 2.5rem;
     text-align: right;
     padding-right: .75rem;
-    border-right: var(--dark);
-    color: var(--dark);
+    border-right: 5px solid var(--white);
+    color: var(--white);
     padding-top: -1%;
 }
 
@@ -87,7 +113,7 @@ main section > div {
 }
 
 main section div {
-    color: var(--dark);
+    color: var(--white);
 }
 
 main section ul {
@@ -97,23 +123,24 @@ main section ul {
 }
 
 main section ul li > * {
-    color: var(--dark);
-    border-color: var(--dark);
+    color: var(--white);
+    border-color: var(--white);
     display: flex;
 }
-
+/* Footer design */
 footer {
     margin: 5vh;
     display: flex;
     justify-content: center;
+    color: gray;
 }
-
+/* Project card design */
 .project-card {
     display: flex;
     overflow: hidden;
     margin: 0rem 1% 1% 0rem;
     width: 48%;
-    border: var(--border-line-width) solid var(--dark);
+    border: .2rem solid var(--white);
     filter: grayscale(100%);
     transition: all 0.25s ease;
 }
@@ -139,7 +166,7 @@ footer {
     position: absolute;
     bottom: 2vh;
     left: 0;
-    background: var(--white);
+    background: var(--dark);
 }
 
 #card-holder {
@@ -151,8 +178,20 @@ footer {
     margin-right: 0px;
     width: 98%;
 }
-
+/* Media screen 1068px */
 @media screen and (max-width:1068px) {
+    h3   {
+        max-width: 50%;
+        max-height: 10vh;
+        background-color: black;
+        opacity: .8;
+        color: white;
+        float: right;
+        display: inline;
+        line-height: 2;
+        padding: 10px;
+    }
+    
     body header h1 span {
         display: none;
     }
@@ -163,7 +202,7 @@ footer {
 
     body section h1 {
         border: none;
-        border-bottom: var(--border-line-width) solid var(--white);
+        border-bottom: .2rem solid var(--white);
         width: 100%;
         text-align: left;
         margin-bottom: 2vh;
@@ -200,11 +239,23 @@ footer {
         flex-wrap: nowrap;
     }
 }
-
+/* Media screen 867px */
 @media screen and (max-width:867px) {
     header {
         display: block;
         height: 100%;
+    }
+
+    h3   {
+        max-width: 50%;
+        max-height: 10vh;
+        background-color: black;
+        opacity: .8;
+        color: white;
+        float: right;
+        display: inline;
+        line-height: 2;
+        padding: 10px;
     }
 
     body header h1 span {
@@ -223,10 +274,12 @@ footer {
         display: inline-block;
         width: 50%;
         padding: .5rem 0rem .3rem 0rem;
-        margin: 0rem 0rem .4rem var(--left-margin);
+        margin: 0rem 0rem .4rem 7vw;
     }
+    
 }
 
+/* Media screen 500px */
 @media screen and (max-width:500px) {
     body section ul li > * {
         width: 100%;
